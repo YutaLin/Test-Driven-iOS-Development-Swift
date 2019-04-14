@@ -51,7 +51,7 @@ class ItemManagerTests: XCTestCase {
         XCTAssertEqual(sut.doneCount, 1, "doneCount should be 1")
     }
     
-    func tesetCHeckinItem_removesItFromTheToDoItemList() {
+    func tesetCheckinItem_removesItFromTheToDoItemList() {
         let firstItem = ToDoItem(title: "First")
         let secondItem = ToDoItem(title: "Second")
         
@@ -61,5 +61,14 @@ class ItemManagerTests: XCTestCase {
         sut.checkItemAtIndex(0)
         
         XCTAssertEqual(sut.itemAtIndex(0).title, secondItem.title)
+    }
+    
+    func testDoneItemAtIndex_ShouldReturnPreviouslyCheckedItem() {
+        let item = ToDoItem(title: "Item")
+        sut.addItem(item: item)
+        sut.checkItemAtIndex(0)
+        
+        let returnedItem = sut.doneItemAtIndex(0)
+        XCTAssertEqual(item.title, returnedItem.title, "should be the same item")
     }
 }
