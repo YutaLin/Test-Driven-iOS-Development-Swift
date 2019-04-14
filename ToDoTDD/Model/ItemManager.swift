@@ -26,5 +26,7 @@ class ItemManager {
     func checkItemAtIndex(_ index: Int) {
         toDoCount -= 1
         doneCount += 1
+        
+        toDoItems.remove(at: index)
     }
 }

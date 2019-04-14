@@ -50,4 +50,16 @@ class ItemManagerTests: XCTestCase {
         XCTAssertEqual(sut.toDoCount, 0, "toDoCount should be 0")
         XCTAssertEqual(sut.doneCount, 1, "doneCount should be 1")
     }
+    
+    func tesetCHeckinItem_removesItFromTheToDoItemList() {
+        let firstItem = ToDoItem(title: "First")
+        let secondItem = ToDoItem(title: "Second")
+        
+        sut.addItem(item: firstItem)
+        sut.addItem(item: secondItem)
+        
+        sut.checkItemAtIndex(0)
+        
+        XCTAssertEqual(sut.itemAtIndex(0).title, secondItem.title)
+    }
 }
