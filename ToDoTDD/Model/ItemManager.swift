@@ -12,7 +12,14 @@ class ItemManager {
     var toDoCount = 0
     let doneCount = 0
     
+    private var toDoItems = [ToDoItem]()
+    
     func addItem(item: ToDoItem) {
         toDoCount += 1
+        toDoItems.append(item)
+    }
+    
+    func itemAtIndex(_ index: Int) -> ToDoItem {
+        return toDoItems[index]
     }
 }

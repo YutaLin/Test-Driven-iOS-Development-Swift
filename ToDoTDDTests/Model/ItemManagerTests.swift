@@ -34,4 +34,12 @@ class ItemManagerTests: XCTestCase {
         sut.addItem(item: ToDoItem(title: "Test title"))
         XCTAssertEqual(sut.toDoCount, 1, "toDOCount should be 1")
     }
+
+    func testItemAtIndex_ShouldReturnPreviouslyAddedItem() {
+        let item = ToDoItem(title: "Item")
+        sut.addItem(item: item)
+        
+        let returnedItem = sut.itemAtIndex(0)
+        XCTAssertEqual(item.title, returnedItem.title, "should be the same item")
+    }
 }
