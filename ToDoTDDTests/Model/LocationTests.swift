@@ -21,6 +21,11 @@ class LocationTests: XCTestCase {
         
     }
     
+    func testInit_ShouldSetName() {
+        let location = Location(name: "Test name")
+        XCTAssertEqual(location.name, "Test name", "Initializer should set the name")
+    }
+    
     func testInit_ShouldSetNameAndCoordinate() {
         let testCoordinate = CLLocationCoordinate2D(latitude: 1, longitude: 2)
         let location = Location(name: "", coordinate: testCoordinate)

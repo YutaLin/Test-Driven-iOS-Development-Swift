@@ -15,7 +15,7 @@ struct Location {
     
     init(name: String,
          coordinate: CLLocationCoordinate2D? = nil) {
-        self.name = ""
+        self.name = name
         self.coordinate = coordinate
     }
 }
