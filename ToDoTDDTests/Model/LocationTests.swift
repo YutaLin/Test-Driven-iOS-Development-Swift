@@ -33,4 +33,14 @@ class LocationTests: XCTestCase {
         XCTAssertEqual(location.coordinate?.latitude, testCoordinate.latitude, "Initializer should set latitude")
         XCTAssertEqual(location.coordinate?.longitude, testCoordinate.longitude, "Initializer should set longitude")
     }
+    
+    func testWhenLongitudeDifferes_ShouldBeNotEqual() {
+        let firstCoordinate = CLLocationCoordinate2D(latitude: 0.0, longitude: 1.0)
+        let firstLocation = Location(name: "Home", coordinate: firstCoordinate)
+        
+        let secondCoordinate = CLLocationCoordinate2D(latitude: 0.0, longitude: 0.0)
+        let secondLocation = Location(name: "Home", coordinate: secondCoordinate)
+        
+        XCTAssertNotEqual(firstLocation, secondLocation)
+    }
 }

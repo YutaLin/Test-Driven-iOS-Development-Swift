@@ -19,3 +19,15 @@ struct Location {
         self.coordinate = coordinate
     }
 }
+
+extension Location: Equatable {
+    static func == (lhs: Location, rhs: Location) -> Bool {
+        if lhs.name != rhs.name ||
+            lhs.coordinate?.latitude != rhs.coordinate?.latitude ||
+            lhs.coordinate?.longitude != rhs.coordinate?.latitude {
+            return false
+        }
+        
+        return true
+    }
+}
