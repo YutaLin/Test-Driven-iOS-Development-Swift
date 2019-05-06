@@ -87,4 +87,11 @@ class ItemManagerTests: XCTestCase {
         XCTAssertEqual(sut.doneCount, 0)
         
     }
+    
+    func test_Add_WhenItemIsAlreadyAdded_DoesNotIncreaseCount() {
+        sut.addItem(item: ToDoItem(title: "Foo"))
+        sut.addItem(item: ToDoItem(title: "Foo"))
+        
+        XCTAssertEqual(sut.toDoCount, 1)
+    }
 }

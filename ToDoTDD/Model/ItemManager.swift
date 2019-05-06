@@ -21,7 +21,9 @@ class ItemManager {
     private var doneItems = [ToDoItem]()
     
     func addItem(item: ToDoItem) {
-        toDoItems.append(item)
+        if !toDoItems.contains(item) {
+            toDoItems.append(item)
+        }
     }
     
     func checkItemAtIndex(_ index: Int) {
