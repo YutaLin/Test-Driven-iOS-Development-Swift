@@ -36,4 +36,9 @@ class ItemManager {
     func doneItemAtIndex(_ index: Int) -> ToDoItem {
         return doneItems[index]
     }
+
+    func removeAll() {
+        toDoItems.removeAll()
+        doneItems.removeAll()
+    }
 }
