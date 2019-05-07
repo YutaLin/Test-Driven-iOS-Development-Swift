@@ -11,9 +11,14 @@ import XCTest
 @testable import ToDoTDD
 
 class ItemListViewControllerTests: XCTestCase {
+    
+    var sut: ItemListViewController!
 
     override func setUp() {
-        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "ItemListViewController") as! ItemListViewController
+        sut = viewController
+        sut.loadViewIfNeeded()
     }
 
     override func tearDown() {
@@ -21,22 +26,19 @@ class ItemListViewControllerTests: XCTestCase {
     }
     
     func test_TableViewIsNotNilAfterViewDidLoad() {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let viewController = storyboard.instantiateViewController(withIdentifier: "ItemListViewController")
-        let sut = viewController as! ItemListViewController
-        
-        sut.loadViewIfNeeded()
         XCTAssertNotNil(sut.tableView)
     }
     
-    func test_LoadingView_SetsTableVIewDataSource() {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let viewController = storyboard.instantiateViewController(withIdentifier: "ItemListViewController")
-        let sut = viewController as! ItemListViewController
-        
-        sut.loadViewIfNeeded()
-        
+    func test_LoadingView_SetsTableViewDataSource() {
         XCTAssertTrue(sut.tableView?.dataSource is ItemListDataProvider)
+    }
+    
+    func test_LoadingView_SetsTableViewDelegate() {
+        XCTAssertTrue(sut.tableView?.delegate is ItemListDataProvider)
+    }
+    
+    func test_LoadingView_DataSourceEqualDelegate() {
+        XCTAssertEqual(sut.tableView?.dataSource as? ItemListDataProvider, sut.tableView?.delegate as? ItemListDataProvider)
     }
 
 }
