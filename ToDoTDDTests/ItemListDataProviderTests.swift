@@ -14,11 +14,16 @@ class ItemListDataProviderTests: XCTestCase {
     
     var sut: ItemListDataProvider!
     var tableView: UITableView!
+    var controller: ItemListViewController!
 
     override func setUp() {
         sut = ItemListDataProvider()
         sut.itemManager = ItemManager()
-        tableView = UITableView()
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        controller = (storyboard.instantiateViewController(withIdentifier: "ItemListViewController") as! ItemListViewController)
+        controller.loadViewIfNeeded()
+        
+        tableView = controller.tableView
         tableView.dataSource = sut
     }
 
@@ -53,7 +58,6 @@ class ItemListDataProviderTests: XCTestCase {
     
     func test_CellForRow_ReturnsItemCell() {
         sut.itemManager?.addItem(item: ToDoItem(title: "Foo"))
-        tableView.register(ItemCell.self, forCellReuseIdentifier: "ItemCell")
         tableView.reloadData()
         
         let cell = tableView.cellForRow(at: IndexPath(row: 0, section: 0))
