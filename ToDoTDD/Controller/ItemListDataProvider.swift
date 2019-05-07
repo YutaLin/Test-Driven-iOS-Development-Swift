@@ -43,7 +43,7 @@ class ItemListDataProvider: NSObject, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        return ItemCell()
     }
     
 }
