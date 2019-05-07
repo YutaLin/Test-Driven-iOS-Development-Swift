@@ -19,6 +19,7 @@
 		551DEE8B22633CA000173DC2 /* ItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551DEE8A22633CA000173DC2 /* ItemManager.swift */; };
 		55F239DB22812CCA0042C283 /* ItemListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F239DA22812CCA0042C283 /* ItemListViewControllerTests.swift */; };
 		55F239DD22812D2E0042C283 /* ItemListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F239DC22812D2D0042C283 /* ItemListViewController.swift */; };
+		55F239DF22814A270042C283 /* ItemListDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F239DE22814A270042C283 /* ItemListDataProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		551DEE8A22633CA000173DC2 /* ItemManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemManager.swift; sourceTree = "<group>"; };
 		55F239DA22812CCA0042C283 /* ItemListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewControllerTests.swift; sourceTree = "<group>"; };
 		55F239DC22812D2D0042C283 /* ItemListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewController.swift; sourceTree = "<group>"; };
+		55F239DE22814A270042C283 /* ItemListDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListDataProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				551DEE61226327C600173DC2 /* LaunchScreen.storyboard */,
 				551DEE64226327C600173DC2 /* Info.plist */,
 				55F239DC22812D2D0042C283 /* ItemListViewController.swift */,
+				55F239DE22814A270042C283 /* ItemListDataProvider.swift */,
 			);
 			path = ToDoTDD;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				551DEE8B22633CA000173DC2 /* ItemManager.swift in Sources */,
+				55F239DF22814A270042C283 /* ItemListDataProvider.swift in Sources */,
 				551DEE59226327C400173DC2 /* AppDelegate.swift in Sources */,
 				551DEE822263351E00173DC2 /* Location.swift in Sources */,
 				551DEE7D22632EE000173DC2 /* ToDoItem.swift in Sources */,

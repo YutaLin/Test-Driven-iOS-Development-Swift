@@ -21,6 +21,9 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="c2V-nk-z1v">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="s3y-cm-c49" id="Xkz-9q-feq"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -33,10 +36,12 @@
                         <viewLayoutGuide key="safeArea" id="U73-e6-X1l"/>
                     </view>
                     <connections>
+                        <outlet property="dataProvider" destination="s3y-cm-c49" id="uPw-RT-sug"/>
                         <outlet property="tableView" destination="c2V-nk-z1v" id="1Ch-97-okn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fym-eg-Lqt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="s3y-cm-c49" customClass="ItemListDataProvider" customModule="ToDoTDD" customModuleProvider="target"/>
             </objects>
         </scene>
     </scenes>
