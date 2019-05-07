@@ -18,6 +18,8 @@
 		551DEE872263382D00173DC2 /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551DEE862263382D00173DC2 /* LocationTests.swift */; };
 		551DEE8922633B7300173DC2 /* ItemManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551DEE8822633B7300173DC2 /* ItemManagerTests.swift */; };
 		551DEE8B22633CA000173DC2 /* ItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551DEE8A22633CA000173DC2 /* ItemManager.swift */; };
+		55F239DB22812CCA0042C283 /* ItemListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F239DA22812CCA0042C283 /* ItemListViewControllerTests.swift */; };
+		55F239DD22812D2E0042C283 /* ItemListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F239DC22812D2D0042C283 /* ItemListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		551DEE862263382D00173DC2 /* LocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
 		551DEE8822633B7300173DC2 /* ItemManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemManagerTests.swift; sourceTree = "<group>"; };
 		551DEE8A22633CA000173DC2 /* ItemManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemManager.swift; sourceTree = "<group>"; };
+		55F239DA22812CCA0042C283 /* ItemListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewControllerTests.swift; sourceTree = "<group>"; };
+		55F239DC22812D2D0042C283 /* ItemListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,7 @@
 				551DEE5F226327C600173DC2 /* Assets.xcassets */,
 				551DEE61226327C600173DC2 /* LaunchScreen.storyboard */,
 				551DEE64226327C600173DC2 /* Info.plist */,
+				55F239DC22812D2D0042C283 /* ItemListViewController.swift */,
 			);
 			path = ToDoTDD;
 			sourceTree = "<group>";
@@ -103,6 +108,7 @@
 			children = (
 				551DEE83226337B800173DC2 /* Model */,
 				551DEE6F226327C600173DC2 /* Info.plist */,
+				55F239DA22812CCA0042C283 /* ItemListViewControllerTests.swift */,
 			);
 			path = ToDoTDDTests;
 			sourceTree = "<group>";
@@ -233,6 +239,7 @@
 				551DEE59226327C400173DC2 /* AppDelegate.swift in Sources */,
 				551DEE822263351E00173DC2 /* Location.swift in Sources */,
 				551DEE7D22632EE000173DC2 /* ToDoItem.swift in Sources */,
+				55F239DD22812D2E0042C283 /* ItemListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +250,7 @@
 				551DEE8922633B7300173DC2 /* ItemManagerTests.swift in Sources */,
 				551DEE872263382D00173DC2 /* LocationTests.swift in Sources */,
 				551DEE85226337B800173DC2 /* ToDoItemTests.swift in Sources */,
+				55F239DB22812CCA0042C283 /* ItemListViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
