@@ -34,8 +34,20 @@ class ItemListDataProviderTests: XCTestCase {
     func test_NumberOfRows_Section1_isToDoCount() {
         sut.itemManager?.addItem(item: ToDoItem(title: "Foo"))
         XCTAssertEqual(tableView.numberOfRows(inSection: 0), 1)
+        
         sut.itemManager?.addItem(item: ToDoItem(title: "Bar"))
         tableView.reloadData()
         XCTAssertEqual(tableView.numberOfRows(inSection: 0), 2)
+    }
+    
+    func test_NumberOfRows_Section2_isDoneCount() {
+        sut.itemManager?.addItem(item: ToDoItem(title: "Foo"))
+        sut.itemManager?.addItem(item: ToDoItem(title: "Bar"))
+        sut.itemManager?.checkItemAtIndex(0)
+        XCTAssertEqual(tableView.numberOfRows(inSection: 1), 1)
+        
+        sut.itemManager?.checkItemAtIndex(0)
+        tableView.reloadData()
+        XCTAssertEqual(tableView.numberOfRows(inSection: 1), 2)
     }
 }
