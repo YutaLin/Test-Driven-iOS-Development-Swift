@@ -10,12 +10,6 @@ import UIKit
 
 class ItemListViewController: UIViewController {
 
-    var tableView: UITableView?
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        tableView = UITableView()
-    }
+    @IBOutlet var tableView: UITableView?
 
 }

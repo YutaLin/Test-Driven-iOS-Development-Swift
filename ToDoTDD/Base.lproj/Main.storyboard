@@ -6,6 +6,38 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Item List View Controller-->
+        <scene sceneID="Hqc-vp-4rf">
+            <objects>
+                <viewController storyboardIdentifier="ItemListViewController" id="JFU-Ja-YuP" customClass="ItemListViewController" customModule="ToDoTDD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s2X-BO-OsV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="c2V-nk-z1v">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="U73-e6-X1l" firstAttribute="trailing" secondItem="c2V-nk-z1v" secondAttribute="trailing" id="1LO-Rj-d8D"/>
+                            <constraint firstItem="U73-e6-X1l" firstAttribute="bottom" secondItem="c2V-nk-z1v" secondAttribute="bottom" id="EWq-Gt-4Ka"/>
+                            <constraint firstItem="c2V-nk-z1v" firstAttribute="leading" secondItem="U73-e6-X1l" secondAttribute="leading" id="RXw-Of-RHk"/>
+                            <constraint firstItem="c2V-nk-z1v" firstAttribute="top" secondItem="U73-e6-X1l" secondAttribute="top" id="qfw-K0-iD5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="U73-e6-X1l"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="c2V-nk-z1v" id="1Ch-97-okn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fym-eg-Lqt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
 </document>
