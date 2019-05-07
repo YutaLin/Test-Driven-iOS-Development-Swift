@@ -20,6 +20,7 @@
 		55F239DB22812CCA0042C283 /* ItemListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F239DA22812CCA0042C283 /* ItemListViewControllerTests.swift */; };
 		55F239DD22812D2E0042C283 /* ItemListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F239DC22812D2D0042C283 /* ItemListViewController.swift */; };
 		55F239DF22814A270042C283 /* ItemListDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F239DE22814A270042C283 /* ItemListDataProvider.swift */; };
+		55F239E122814D6F0042C283 /* ItemListDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F239E022814D6F0042C283 /* ItemListDataProviderTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		55F239DA22812CCA0042C283 /* ItemListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewControllerTests.swift; sourceTree = "<group>"; };
 		55F239DC22812D2D0042C283 /* ItemListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewController.swift; sourceTree = "<group>"; };
 		55F239DE22814A270042C283 /* ItemListDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListDataProvider.swift; sourceTree = "<group>"; };
+		55F239E022814D6F0042C283 /* ItemListDataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListDataProviderTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				551DEE83226337B800173DC2 /* Model */,
 				551DEE6F226327C600173DC2 /* Info.plist */,
 				55F239DA22812CCA0042C283 /* ItemListViewControllerTests.swift */,
+				55F239E022814D6F0042C283 /* ItemListDataProviderTests.swift */,
 			);
 			path = ToDoTDDTests;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55F239E122814D6F0042C283 /* ItemListDataProviderTests.swift in Sources */,
 				551DEE8922633B7300173DC2 /* ItemManagerTests.swift in Sources */,
 				551DEE872263382D00173DC2 /* LocationTests.swift in Sources */,
 				551DEE85226337B800173DC2 /* ToDoItemTests.swift in Sources */,
