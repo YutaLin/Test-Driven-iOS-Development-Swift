@@ -10,6 +10,8 @@ import UIKit
 
 class ItemCell: UITableViewCell {
     
+    let titleLabel = UILabel()
+    
     func configCell(with item: ToDoItem) {
         
     }
