@@ -42,6 +42,12 @@ class ItemCellTests: XCTestCase {
     func test_HasDateLabel() {
         XCTAssertTrue(cell.dateLabel.isDescendant(of: cell.contentView))
     }
+    
+    func test_ConfigCell_SetsTitle() {
+        cell.configCell(with: ToDoItem(title: "Foo"))
+        
+        XCTAssertEqual(cell.titleLabel.text, "Foo")
+    }
 
 }
 

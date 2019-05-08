@@ -15,6 +15,6 @@ class ItemCell: UITableViewCell {
     @IBOutlet weak var dateLabel: UILabel!
     
     func configCell(with item: ToDoItem) {
-        
+        titleLabel.text = item.title
     }
 }
