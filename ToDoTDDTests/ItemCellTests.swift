@@ -38,6 +38,10 @@ class ItemCellTests: XCTestCase {
     func test_HasLocationLabel() {
         XCTAssertTrue(cell.locationLabel.isDescendant(of: cell.contentView))
     }
+    
+    func test_HasDateLabel() {
+        XCTAssertTrue(cell.dateLabel.isDescendant(of: cell.contentView))
+    }
 
 }
 
