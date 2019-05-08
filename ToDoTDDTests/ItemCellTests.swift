@@ -48,6 +48,16 @@ class ItemCellTests: XCTestCase {
         
         XCTAssertEqual(cell.titleLabel.text, "Foo")
     }
+    
+    func test_ConfigCell_SetsDate() {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM/dd/yyyy"
+        let date = dateFormatter.date(from: "08/27/2017")
+        let timestamp = date?.timeIntervalSince1970
+        cell.configCell(with: ToDoItem(title: "Foo", timestamp: timestamp))
+        
+        XCTAssertEqual(cell.dateLabel.text, "08/27/2017")
+    }
 
 }
 
