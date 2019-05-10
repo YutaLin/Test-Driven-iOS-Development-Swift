@@ -81,6 +81,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fym-eg-Lqt" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <customObject id="s3y-cm-c49" customClass="ItemListDataProvider" customModule="ToDoTDD" customModuleProvider="target"/>
             </objects>
+            <point key="canvasLocation" x="251" y="140"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="djB-RX-VEJ">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" id="q0x-SV-LhA" customClass="DetailViewController" customModule="ToDoTDD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I97-Ac-MX2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S4y-2V-Buc">
+                                <rect key="frame" x="130" y="131" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="m5N-qI-dVB"/>
+                    </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="S4y-2V-Buc" id="PAV-Yc-uyi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3ph-xt-klg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="958" y="124"/>
         </scene>
     </scenes>
 </document>

@@ -17,6 +17,8 @@
 		551DEE872263382D00173DC2 /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551DEE862263382D00173DC2 /* LocationTests.swift */; };
 		551DEE8922633B7300173DC2 /* ItemManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551DEE8822633B7300173DC2 /* ItemManagerTests.swift */; };
 		551DEE8B22633CA000173DC2 /* ItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551DEE8A22633CA000173DC2 /* ItemManager.swift */; };
+		55CAC1882285C7DB006EEDB9 /* DetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CAC1872285C7DB006EEDB9 /* DetailViewControllerTests.swift */; };
+		55CAC18A2285C826006EEDB9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CAC1892285C826006EEDB9 /* DetailViewController.swift */; };
 		55F239DB22812CCA0042C283 /* ItemListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F239DA22812CCA0042C283 /* ItemListViewControllerTests.swift */; };
 		55F239DD22812D2E0042C283 /* ItemListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F239DC22812D2D0042C283 /* ItemListViewController.swift */; };
 		55F239DF22814A270042C283 /* ItemListDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F239DE22814A270042C283 /* ItemListDataProvider.swift */; };
@@ -50,6 +52,8 @@
 		551DEE862263382D00173DC2 /* LocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
 		551DEE8822633B7300173DC2 /* ItemManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemManagerTests.swift; sourceTree = "<group>"; };
 		551DEE8A22633CA000173DC2 /* ItemManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemManager.swift; sourceTree = "<group>"; };
+		55CAC1872285C7DB006EEDB9 /* DetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailViewControllerTests.swift; path = Controller/DetailViewControllerTests.swift; sourceTree = "<group>"; };
+		55CAC1892285C826006EEDB9 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		55F239DA22812CCA0042C283 /* ItemListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewControllerTests.swift; sourceTree = "<group>"; };
 		55F239DC22812D2D0042C283 /* ItemListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewController.swift; sourceTree = "<group>"; };
 		55F239DE22814A270042C283 /* ItemListDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListDataProvider.swift; sourceTree = "<group>"; };
@@ -116,6 +120,7 @@
 				55F239DA22812CCA0042C283 /* ItemListViewControllerTests.swift */,
 				55F239E022814D6F0042C283 /* ItemListDataProviderTests.swift */,
 				55F23A032282CE050042C283 /* ItemCellTests.swift */,
+				55CAC1872285C7DB006EEDB9 /* DetailViewControllerTests.swift */,
 			);
 			path = ToDoTDDTests;
 			sourceTree = "<group>";
@@ -146,6 +151,7 @@
 				55F239DC22812D2D0042C283 /* ItemListViewController.swift */,
 				55F239DE22814A270042C283 /* ItemListDataProvider.swift */,
 				55F239E322815BF90042C283 /* ItemCell.swift */,
+				55CAC1892285C826006EEDB9 /* DetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -258,6 +264,7 @@
 				55F239E422815BF90042C283 /* ItemCell.swift in Sources */,
 				551DEE7D22632EE000173DC2 /* ToDoItem.swift in Sources */,
 				55F239DD22812D2E0042C283 /* ItemListViewController.swift in Sources */,
+				55CAC18A2285C826006EEDB9 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +276,7 @@
 				55F239E122814D6F0042C283 /* ItemListDataProviderTests.swift in Sources */,
 				551DEE8922633B7300173DC2 /* ItemManagerTests.swift in Sources */,
 				551DEE872263382D00173DC2 /* LocationTests.swift in Sources */,
+				55CAC1882285C7DB006EEDB9 /* DetailViewControllerTests.swift in Sources */,
 				551DEE85226337B800173DC2 /* ToDoItemTests.swift in Sources */,
 				55F239DB22812CCA0042C283 /* ItemListViewControllerTests.swift in Sources */,
 			);
