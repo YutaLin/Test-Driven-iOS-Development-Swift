@@ -91,18 +91,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S4y-2V-Buc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S4y-2V-Buc">
                                 <rect key="frame" x="130" y="131" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="HOv-vQ-7Qz">
+                                <rect key="frame" x="20" y="248" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="BoK-Ca-z1D"/>
+                                    <constraint firstAttribute="height" constant="128" id="Swa-bi-m8S"/>
+                                </constraints>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="HOv-vQ-7Qz" firstAttribute="leading" secondItem="m5N-qI-dVB" secondAttribute="leading" constant="20" id="ALd-AZ-d7T"/>
+                            <constraint firstItem="S4y-2V-Buc" firstAttribute="top" secondItem="m5N-qI-dVB" secondAttribute="top" constant="87" id="Ney-hA-pVO"/>
+                            <constraint firstItem="HOv-vQ-7Qz" firstAttribute="top" secondItem="S4y-2V-Buc" secondAttribute="bottom" constant="96" id="VHX-UL-55h"/>
+                            <constraint firstItem="S4y-2V-Buc" firstAttribute="leading" secondItem="m5N-qI-dVB" secondAttribute="leading" constant="130" id="XRv-gj-ol2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="m5N-qI-dVB"/>
                     </view>
                     <connections>
+                        <outlet property="mapView" destination="HOv-vQ-7Qz" id="7Qk-TW-oH0"/>
                         <outlet property="titleLabel" destination="S4y-2V-Buc" id="PAV-Yc-uyi"/>
                     </connections>
                 </viewController>

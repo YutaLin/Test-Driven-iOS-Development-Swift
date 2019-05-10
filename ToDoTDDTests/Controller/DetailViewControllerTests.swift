@@ -11,9 +11,13 @@ import XCTest
 @testable import ToDoTDD
 
 class DetailViewControllerTests: XCTestCase {
+    
+    var sut: DetailViewController!
 
     override func setUp() {
-        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        sut = storyboard.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController
+        sut.loadViewIfNeeded()
     }
 
     override func tearDown() {
@@ -21,10 +25,12 @@ class DetailViewControllerTests: XCTestCase {
     }
     
     func test_HasTitleLabel() {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let sut = storyboard.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
-        sut.loadViewIfNeeded()
         let titleLabelIsSubView = sut.titleLabel?.isDescendant(of: sut.view) ?? false
         XCTAssertTrue(titleLabelIsSubView)
+    }
+    
+    func test_HasMapView() {
+        let mapViewIsSubView = sut.mapView?.isDescendant(of: sut.view) ?? false
+        XCTAssertTrue(mapViewIsSubView)
     }
 }
