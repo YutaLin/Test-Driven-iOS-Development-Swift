@@ -53,4 +53,15 @@ class DetailViewControllerTests: XCTestCase {
         XCTAssertEqual(sut.mapView.centerCoordinate.latitude, coordinate.latitude, accuracy: 0.001)
         XCTAssertEqual(sut.mapView.centerCoordinate.longitude, coordinate.longitude , accuracy: 0.001)
     }
+    
+    func test_CheckItem_CheksItemInItemManager() {
+        let itemManager = ItemManager()
+        itemManager.addItem(item: ToDoItem(title: "Foo"))
+        
+        sut.itemInfo = (itemManager, 0)
+        sut.checkItem()
+        
+        XCTAssertEqual(itemManager.toDoCount, 0)
+        XCTAssertEqual(itemManager.doneCount, 1)
+    }
 }
