@@ -147,5 +147,32 @@
             </objects>
             <point key="canvasLocation" x="958" y="124"/>
         </scene>
+        <!--Input View Controller-->
+        <scene sceneID="WEK-un-MsB">
+            <objects>
+                <viewController storyboardIdentifier="InputViewController" id="dFE-TY-DdM" customClass="InputViewController" customModule="ToDoTDD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KzR-dp-TX4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XCt-Ng-QfR">
+                                <rect key="frame" x="41" y="219" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="7hu-7Z-JFn"/>
+                    </view>
+                    <connections>
+                        <outlet property="titleTextField" destination="XCt-Ng-QfR" id="wDF-Ni-3m8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aSo-gZ-ce6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1757" y="124"/>
+        </scene>
     </scenes>
 </document>
